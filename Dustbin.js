@@ -13,8 +13,11 @@ class Dustbin{
     
         display(){
             var pos = this.body.position ;
+            push();
             rectMode(CENTER);
-            fill("rwhite");
+            stroke(0);
+            fill("white");
             rect(pos.x,pos.y,this.width,this.height);
+            pop();
         }
     }
